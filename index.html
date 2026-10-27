@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rooster Burger & Beer | Maceió</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #111111;
+            color: #ffffff;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #000000;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 3px solid #FF4500; /* Laranja da marca */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo-text span {
+            color: #FF4500;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 2px solid #333;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #FF4500; /* Laranja para combinar */
+            color: white;
+            padding: 16px 40px;
+            text-decoration: none;
+            font-weight: 900;
+            border-radius: 5px;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #e63e00;
+        }
+
+        /* Seção de Unidades */
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            color: #FF4500;
+            margin: 40px 0 20px 0;
+            text-transform: uppercase;
+        }
+
+        .unidades-container {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .unidade-card {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #FF4500;
+        }
+
+        .unidade-card h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .unidade-card p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Destaque Kids */
+        .kids-section {
+            background-color: #FF4500;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+
+        .kids-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+
+        .kids-section p {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #000;
+            color: #666;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">The <span>Rooster</span></div>
+    </header>
+
+    <section class="hero">
+        <h1>Burger de Verdade</h1>
+        <p>Carne na chapa, cerveja gelada e o melhor ambiente de Maceió para ir com a família.</p>
+        <!-- Link direto para o WhatsApp deles (via API) -->
+        <a href="https://wa.me/5582982030102" class="btn-whatsapp" target="_blank">Pedir Delivery</a>
+    </section>
+
+    <h2 class="section-title">Nossas Unidades</h2>
+    <section class="unidades-container">
+        <div class="unidade-card">
+            <h3>📍 Ponta Verde</h3>
+            <p>Aberto todos os dias. O point principal da galera.</p>
+        </div>
+        <div class="unidade-card">
+            <h3>📍 Jatiúca (Truckzone)</h3>
+            <p>Fechado às terças-feiras. Clima de rua e muita cerveja.</p>
+        </div>
+        <div class="unidade-card">
+            <h3>🔥 Parrilla Fazenda Cervejeira</h3>
+            <p>Sábado e Domingo. O melhor da parrilla no fim de semana.</p>
+        </div>
+    </section>
+
+    <section class="kids-section">
+        <h2>The Rooster Kids</h2>
+        <p>Traga a criançada! Temos parquinho exclusivo para a família aproveitar junto.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Rooster Burger & Beer. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
